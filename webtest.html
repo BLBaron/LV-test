@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Test for LabView data</title>
+	<link type="text/css" href="../assets/styles.css" rel="stylesheet" />
+	<script src="../assets/numgen.js" type="text/javascript"></script>
+
+</head>
+<body>
+	<div id="interface">
+	<h1>Number Generator Test Interface</h1>
+		<div id="controls">
+			<div id="system">
+				<h2>Number Collection</h2>
+				<button id="start">Start</button>  
+				<input type="submit" id="stop" value="Stop"/> 
+			</div>
+			<div id="status">
+				<!-- hide after start is pressed -->
+				<span class="loading" id="waiting">
+					<img src="../assets/loading_dots.gif" alt="loading dots" style="width:40px;">
+					Waiting for connection
+				</span>
+				<!-- hidden until start is pressed -->
+				<span class="loading" id="reading">
+					<img src="../assets/loading_dots.gif" alt="loading dots" style="width:40px;">
+					Reading data
+				</span>
+			</div>
+			<div class="spacer">
+			</div>
+			<div id="inputs">
+				<h2>Send Frequency</h2>
+				<input type="text" id="frequency" name="frequency" placeholder="0" />
+				<input type="submit" id="submitnums" value="Go"/>
+			</div>
+		</div>
+		<div id="numbers">
+		<!-- would probably be best to create some sort of table here -->
+			<h2>Values Recieved</h2>	
+			<table>
+			  <tr>
+				<th>T1</th>
+			  </tr>
+			  <tr>
+				<td>{{numbers.T1}}</td> 
+			  </tr>
+			  <tr>
+				<th>H1</th>
+			  </tr>
+			  <tr>
+				<td>{{numbers.H1}}</td>
+			  </tr>
+			  <tr>
+				<th>T2</th>
+			  </tr>
+			  <tr>
+				<td>{{numbers.T2}}</td>
+			  </tr>
+			  <tr>
+				<th>H2</th>
+			  </tr>
+			  <tr>
+				<td>{{numbers.H2}}</td>
+			  </tr>
+			  <tr>
+				<th>T3</th>
+			  </tr>
+			  <tr>
+				<td>{{numbers.T3}}</td>
+			  </tr>
+			  <tr>
+				<th>T4</th>
+			  </tr>
+			  <tr>
+				<td>{{numbers.T4}}</td>
+			  </tr>
+			  <tr>
+				<th>I</th>
+			  </tr>
+			  <tr>
+				<td>{{numbers.I}}</td>
+			  </tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
