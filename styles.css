@@ -1,0 +1,70 @@
+/*  stylesheet for random number generator app */
+
+body{
+    font-family: Arial, Helvetica, Sans-Serif;
+	background-color: #3C4D82;
+}
+
+h1 {
+	font-size: 16pt;
+	text-align: center;
+}
+
+h2 {
+	font-size: 12pt;
+}
+
+#interface {
+	width: 40%;
+	margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+	overflow: hidden;
+}
+
+#status p {
+	display: inline;
+}
+
+#status img {
+	vertical-align: middle;
+}
+
+#controls {
+	width: 40%;
+	padding: 1em;
+	float: left;
+}
+#inputs p{
+	margin-bottom: 5px;
+}
+
+#inputs input{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#system p{
+	margin-bottom: 5px;
+}
+
+#numbers {
+	width: 40%;
+	float: right;
+	padding: 1em;
+}
+td {
+	background-color: #d8d8d8;
+	padding: 3px;
+	border-style: inset;
+	border-color: gray;
+	border-width: 1px;
+	width: 30%;
+}
+th {
+    text-align: left;
+}
+
+.spacer {
+	height:20px;
+}
